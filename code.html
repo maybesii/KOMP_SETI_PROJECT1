@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Код проекта</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #1f1f1f;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77aaff 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            color: #77aaff;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .code-section {
+            background: #1f1f1f;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        pre {
+            background: #2d2d2d;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            color: #e0e0e0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        footer {
+            background: #1f1f1f;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: #77aaff 3px solid;
+        }
+        footer a {
+            color: #77aaff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #ffffff;
+        }
+        .file-structure {
+            background: #1f1f1f;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .file-structure ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .file-structure ul li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .file-structure ul li:before {
+            content: "📄";
+            position: absolute;
+            left: -20px;
+        }
+        .file-structure ul li.folder:before {
+            content: "📁";
+        }
+        .file-structure ul li.folder ul {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Код проекта</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Вернуться на главную</a>
+    </nav>
+
+    <div class="container">
+        <div class="file-structure">
+            <h2>Структура файлов</h2>
+            <ul>
+                <li class="folder">project
+                    <ul>
+                        <li>index.html</li>
+                        <li>code.html</li>
+                        <li class="folder">css
+                            <ul>
+                                <li>styles.css</li>
+                            </ul>
+                        </li>
+                        <li class="folder">images
+                            <ul>
+                                <li>try.jpg</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="code-section">
+            <h2>HTML</h2>
+            <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="ru"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Моя личная страница&lt;/title&gt;
+    &lt;link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;div class="container"&gt;
+            &lt;h1&gt;Добро пожаловать на мою страницу&lt;/h1&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;nav&gt;
+        &lt;a href="#about"&gt;Обо мне&lt;/a&gt;
+        &lt;a href="#interests"&gt;Интересы&lt;/a&gt;
+        &lt;a href="#contact"&gt;Контакты&lt;/a&gt;
+        &lt;a href="code.html" class="code-button"&gt;Посмотреть код&lt;/a&gt;
+    &lt;/nav&gt;
+
+    &lt;div class="container"&gt;
+        &lt;div class="main-content"&gt;
+            &lt;section id="about"&gt;
+                &lt;h2&gt;Обо мне&lt;/h2&gt;
+                &lt;div class="about-section"&gt;
+                    &lt;img src="images/try.jpg" alt="Мое лицо" class="profile-image"&gt;
+                    &lt;p&gt;Привет! Меня зовут Иванов Евгений. Я студент на специальность "09.02.07 Информационные системы и программирование". Моя страсть к программированию и стремление к постоянному развитию помогают мне&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+
+            &lt;section id="interests"&gt;
+                &lt;h2&gt;Мои интересы&lt;/h2&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;Программирование и разработка программного обеспечения&lt;/li&gt;
+                    &lt;li&gt;Программные обеспечения&lt;/li&gt;
+                    &lt;li&gt;Чтение научной литературы&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/section&gt;
+
+            &lt;section id="contact"&gt;
+                &lt;h2&gt;Контакты&lt;/h2&gt;
+                &lt;p&gt;Если вы хотите связаться со мной, вы можете сделать это через следующие каналы:&lt;/p&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;&lt;i class="fas fa-envelope"&gt;&lt;/i&gt; Email: &lt;a href="mailto:imaybebench@gmail.com"&gt;imaybebench@gmail.com&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;i class="fas fa-phone"&gt;&lt;/i&gt; Телефон: +7 (939) 375-88-50&lt;/li&gt;
+                    &lt;li&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt; GitHub: &lt;a href="https://github.com/maybesii/" target="_blank"&gt;Мой GitHub&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+        &lt;div class="container"&gt;
+            &lt;p&gt;&amp;copy; 2025 Иванов Евгений. Все права защищены.&lt;/p&gt;
+            &lt;p&gt;&lt;a href="#top"&gt;Вернуться наверх&lt;/a&gt;&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+            </code></pre>
+        </div>
+
+        <div class="code-section">
+            <h2>CSS</h2>
+            <pre><code>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #1f1f1f;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    font-size: 36px;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    color: #77aaff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.main-content {
+    padding: 20px;
+    background: #1f1f1f;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.main-content h2 {
+    color: #77aaff;
+}
+
+.main-content ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.main-content ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    background: #1f1f1f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-top: #77aaff 3px solid;
+}
+
+footer a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+section:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #77aaff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+.code-button {
+    background-color: #77aaff;
+    color: #121212;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.code-button:hover {
+    background-color: #ffffff;
+    color: #121212;
+}
+            </code></pre>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Иванов Евгений. Все права защищены.</p>
+            <p><a href="index.html">Вернуться на главную</a></p>
+        </div>
+    </footer>
+</body>
+</html>
