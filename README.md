@@ -33,7 +33,11 @@
 
 Вы можете посмотреть проект в действии по ссылке: [Моя личная страница](http://f1091403.xsph.ru/DZ_KOMP/index.html)
 
+
+# index.html
 ![index.html](http://f1091403.xsph.ru/DZ_KOMP/image1.png)
+
+# code.html
 ![code.html](http://f1091403.xsph.ru/DZ_KOMP/image2.png)
 
 
