@@ -25,7 +25,7 @@
 
 1. Склонируйте репозиторий на ваш компьютер:
    ```bash git clone https://github.com/maybesii/KOMP_SETI_PROJECT1.git```
-2. Перейдите в директорию проекта:                             
+2. Перейдите в директорию проекта:
    ```bash cd KOMP_SETI_PROJECT1```
 3. Откройте файл `index.html` в любом браузере
 
